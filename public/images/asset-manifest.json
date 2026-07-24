@@ -1,0 +1,56 @@
+[
+  {
+    "filename": "marketplace-hero-desktop.avif",
+    "role": "desktop homepage hero",
+    "width": 1600,
+    "height": 1000,
+    "alt": "",
+    "focalPoint": "76% 55%",
+    "cropRules": "Keep the machine and both professionals in the right 55%; preserve open sky and site on the left."
+  },
+  {
+    "filename": "marketplace-hero-mobile.avif",
+    "role": "mobile homepage hero",
+    "width": 900,
+    "height": 900,
+    "alt": "Backhoe loader inspected by a site engineer at an Indian construction project",
+    "focalPoint": "52% 62%",
+    "cropRules": "Keep the complete machine and engineer visible at 4:5 or square."
+  },
+  {
+    "filename": "supplier-fleet-yard.avif",
+    "role": "supplier pathway",
+    "width": 1100,
+    "height": 825,
+    "alt": "Indian equipment fleet manager reviews availability beside three backhoe loaders",
+    "focalPoint": "45% 55%",
+    "cropRules": "Keep the manager and at least two machines visible."
+  },
+  {
+    "filename": "buyer-jobsite-request.avif",
+    "role": "buyer workflow",
+    "width": 1100,
+    "height": 825,
+    "alt": "Site engineer creates an equipment request on a smartphone at an Indian construction project",
+    "focalPoint": "34% 45%",
+    "cropRules": "Keep the engineer's helmet, hands, and phone in frame."
+  },
+  {
+    "filename": "equipment-handover-proof.avif",
+    "role": "handover and trust",
+    "width": 1100,
+    "height": 825,
+    "alt": "Two professionals document a backhoe loader handover with a phone and checklist",
+    "focalPoint": "54% 50%",
+    "cropRules": "Keep both professionals' hands, phone, controls, and checklist visible."
+  },
+  {
+    "filename": "backhoe-loader-cutout.png",
+    "role": "category equipment cutout",
+    "width": 1536,
+    "height": 1024,
+    "alt": "Unbranded yellow backhoe loader shown from the front and side",
+    "focalPoint": "50% 52%",
+    "cropRules": "Never crop the buckets, tires, or rear arm."
+  }
+]
