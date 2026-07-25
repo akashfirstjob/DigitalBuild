@@ -1,6 +1,4 @@
-"use client";
-
-import Link from "next/link";
+import Link from "@/components/Link";
 import {
   ArrowLeft,
   ArrowRight,
@@ -15,7 +13,7 @@ import {
   Wrench,
 } from "lucide-react";
 import { FormEvent, useMemo, useState } from "react";
-import { AppShell, StatusPill } from "../../components/SiteChrome";
+import { AppShell, StatusPill } from "@/components/SiteChrome";
 
 export default function SupplierQuote() {
   const [preview, setPreview] = useState(false);

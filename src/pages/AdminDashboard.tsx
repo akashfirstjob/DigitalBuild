@@ -1,5 +1,3 @@
-"use client";
-
 import {
   AlertTriangle,
   ArrowRight,
@@ -16,7 +14,7 @@ import {
   X,
 } from "lucide-react";
 import { useState } from "react";
-import { AppShell, StatusPill } from "../components/SiteChrome";
+import { AppShell, StatusPill } from "@/components/SiteChrome";
 
 const queue = [
   {

@@ -1,6 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-
-import Link from "next/link";
+import Link from "@/components/Link";
 import {
   ArrowRight,
   BadgeCheck,
@@ -15,7 +13,7 @@ import {
   TimerReset,
   Wrench,
 } from "lucide-react";
-import { Footer, Header, ResponsivePicture } from "./components/SiteChrome";
+import { Footer, Header, ResponsivePicture } from "@/components/SiteChrome";
 
 const trustFacts = [
   { icon: FileCheck2, label: "Business documents reviewed" },

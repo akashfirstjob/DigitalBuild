@@ -1,6 +1,4 @@
-"use client";
-
-import Link from "next/link";
+import Link from "@/components/Link";
 import {
   ArrowLeft,
   ArrowRight,
@@ -17,7 +15,7 @@ import {
   X,
 } from "lucide-react";
 import { useState } from "react";
-import { AppShell, StatusPill } from "../../components/SiteChrome";
+import { AppShell, StatusPill } from "@/components/SiteChrome";
 
 const quotes = [
   {

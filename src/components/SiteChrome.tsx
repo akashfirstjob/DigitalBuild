@@ -1,7 +1,5 @@
-"use client";
-
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import Link from "@/components/Link";
+import { useLocation } from "react-router-dom";
 import {
   Bell,
   ChevronRight,
@@ -222,7 +220,7 @@ export function AppShell({
   user: string;
   children: React.ReactNode;
 }) {
-  const pathname = usePathname();
+  const { pathname } = useLocation();
   return (
     <div className="app-layout">
       <aside className="app-sidebar">

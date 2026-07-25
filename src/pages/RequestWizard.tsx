@@ -1,6 +1,4 @@
-"use client";
-
-import Link from "next/link";
+import Link from "@/components/Link";
 import {
   ArrowLeft,
   ArrowRight,
@@ -16,7 +14,7 @@ import {
   X,
 } from "lucide-react";
 import { FormEvent, useEffect, useMemo, useState } from "react";
-import { Brand } from "../components/SiteChrome";
+import { Brand } from "@/components/SiteChrome";
 
 type FormData = {
   model: string;

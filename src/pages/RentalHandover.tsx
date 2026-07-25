@@ -1,6 +1,4 @@
-"use client";
-
-import Link from "next/link";
+import Link from "@/components/Link";
 import {
   AlertTriangle,
   ArrowLeft,
@@ -24,7 +22,7 @@ import {
   AppShell,
   ResponsivePicture,
   StatusPill,
-} from "../components/SiteChrome";
+} from "@/components/SiteChrome";
 
 const handoverItems = [
   "Machine front, rear, and both sides",

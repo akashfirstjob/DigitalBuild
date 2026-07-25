@@ -1,8 +1,4 @@
-"use client";
-
-/* eslint-disable @next/next/no-img-element */
-
-import Link from "next/link";
+import Link from "@/components/Link";
 import {
   ArrowRight,
   BadgeCheck,
@@ -20,7 +16,7 @@ import {
   Wrench,
 } from "lucide-react";
 import { useState } from "react";
-import { AppShell, StatusPill } from "../components/SiteChrome";
+import { AppShell, StatusPill } from "@/components/SiteChrome";
 
 const checklist = [
   {

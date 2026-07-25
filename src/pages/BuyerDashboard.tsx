@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/Link";
 import {
   ArrowRight,
   CalendarClock,
@@ -9,7 +9,7 @@ import {
   Plus,
   Truck,
 } from "lucide-react";
-import { AppShell, StatusPill } from "../components/SiteChrome";
+import { AppShell, StatusPill } from "@/components/SiteChrome";
 
 export default function BuyerDashboard() {
   return (
