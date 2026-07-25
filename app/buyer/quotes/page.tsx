@@ -24,6 +24,8 @@ const quotes = [
     id: "QT-2091",
     supplier: "Prakash Equipment Services",
     featured: true,
+    signal: "Best overall fit",
+    signalTone: "recommended",
     rate: "₹1,850",
     estimate: "₹1,95,820",
     mobilization: "₹8,500",
@@ -42,6 +44,8 @@ const quotes = [
     id: "QT-2094",
     supplier: "Nandi Earthmovers",
     featured: false,
+    signal: "Lowest hourly rate",
+    signalTone: "rate",
     rate: "₹1,780",
     estimate: "₹1,99,196",
     mobilization: "₹12,000",
@@ -60,6 +64,8 @@ const quotes = [
     id: "QT-2097",
     supplier: "Cauvery Plant Hire",
     featured: false,
+    signal: "Mobilization included",
+    signalTone: "included",
     rate: "₹1,920",
     estimate: "₹2,03,416",
     mobilization: "Included",
@@ -154,11 +160,14 @@ export default function QuoteComparison() {
               }`}
               key={quote.id}
             >
-              {quote.featured && (
-                <span className="best-fit">
-                  <Star aria-hidden="true" /> Best overall fit
-                </span>
-              )}
+              <span className={`best-fit quote-signal ${quote.signalTone}`}>
+                {quote.featured ? (
+                  <Star aria-hidden="true" />
+                ) : (
+                  <Check aria-hidden="true" />
+                )}
+                {quote.signal}
+              </span>
               <div className="mobile-quote-header">
                 <label className="compare-check">
                   <input
@@ -252,24 +261,31 @@ export default function QuoteComparison() {
                 role="rowgroup"
                 key={quote.id}
               >
-                {quote.featured && (
-                  <span className="best-fit desktop-best-fit">
-                    <Star aria-hidden="true" /> Best overall fit
-                  </span>
-                )}
                 <div className="quote-column-header">
-                  <div>
-                    <strong>{quote.supplier}</strong>
+                  <span
+                    className={`best-fit quote-signal desktop-best-fit ${quote.signalTone}`}
+                  >
+                    {quote.featured ? (
+                      <Star aria-hidden="true" />
+                    ) : (
+                      <Check aria-hidden="true" />
+                    )}
+                    {quote.signal}
+                  </span>
+                  <strong className="quote-supplier-name">
+                    {quote.supplier}
+                  </strong>
+                  <div className="quote-header-meta">
                     <small>{quote.id}</small>
+                    <label className="compare-check">
+                      <input
+                        type="checkbox"
+                        checked={selected.includes(quote.id)}
+                        onChange={() => toggle(quote.id)}
+                      />
+                      <span>Compare</span>
+                    </label>
                   </div>
-                  <label className="compare-check">
-                    <input
-                      type="checkbox"
-                      checked={selected.includes(quote.id)}
-                      onChange={() => toggle(quote.id)}
-                    />
-                    <span>Compare</span>
-                  </label>
                 </div>
                 <button
                   className="verification-trigger desktop-verification"
